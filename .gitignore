@@ -6,7 +6,7 @@
 .vscode/
 npm-debug.log
 .vs/
-
+go.sh
 
 node_modules/
 Procfile

@@ -1,0 +1,14 @@
+[Unit]
+Description=RTMP Gateway
+Documentation=https://github.com/innovixr/rtmp-gateway
+After=network.target
+
+[Service]
+Type=simple
+User=steam
+WorkingDirectory=/home/steam/rtmp-gateway
+ExecStart=/usr/bin/node src/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
